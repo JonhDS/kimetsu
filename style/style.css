@@ -47,6 +47,8 @@ section .bg {
 
 .home>img {
     position: absolute;
+    right: 2%;
+    max-width: 500px;
     right: 3%;
     bottom: 0;
     width: 100%;
@@ -286,10 +288,10 @@ section .bg {
     min-height: 100vh;
     font-family: "Nunito", sans-serif;
     background-image: linear-gradient(45deg,
-            #e09ad6 0%,
-            #c3af31 30%,
-            #efdf79 60%,
-            #6ec99f 100%);
+            #ff9b00 0%,
+            #ffac00 30%,
+            #ffce00 60%,
+            #fff100 100%);
 }
 
 .info img {
@@ -331,7 +333,7 @@ section .bg {
     font-weight: 800;
     line-height: 1;
     letter-spacing: 1.4;
-    color: #6ec99f;
+    color: #0c4129;
     text-align: center;
 }
 
@@ -354,18 +356,24 @@ section .bg {
     font-weight: 500;
     border-radius: 5px;
     background: linear-gradient(90deg,
-            #e09ad6 0%,
-            #e4b49b 20%,
-            #ede302 50%,
-            #6ec99f 80%);
-    color: #4b5563;
+            #fff100 0%,
+            #ffdf00 20%,
+            #ffce00 50%,
+            #ffac00 80%);
+    color: #0e1d33;
     padding: 5px 8px;
 }
 
 @media (max-width: 1500px) {
     .home>img {
-        max-width: 600px;
+        right: 2%;
+        max-width: 500px;
     }
+
+    .home-content {
+        width: min(400px, 100%);
+    }
+
 
     .scroll p {
         font-size: 7rem;
@@ -465,7 +473,7 @@ section .bg {
         gap: 15px;
         padding: 30px 30px;
     }
-}
+
 
 @media (max-width: 800px) {
     .home>img {
@@ -497,6 +505,15 @@ section .bg {
     .tag-container span {
         font-size: 0.8rem;
     }
+
+    .info {
+        gap: 5px;
+    }
+
+    .info img {
+        max-width: 1900px;
+        border-radius: 10px;
+    }
 }
 
 @media (max-width: 660px) {
@@ -515,6 +532,15 @@ section .bg {
 
     .scroll p {
         font-size: 3rem;
+    }
+
+    .info {
+        gap: 5px;
+    }
+
+    .info img {
+        max-width: 1900px;
+        border-radius: 10px;
     }
 }
 
@@ -544,12 +570,12 @@ section .bg {
     }
 
     .info {
-        gap: 40px;
+        gap: 5px;
     }
 
     .info img {
         margin-top: 50px;
-        max-width: 190px;
+        max-width: 1900px;
     }
 
     .info-content {
@@ -557,5 +583,5 @@ section .bg {
         padding: 30px 20px;
         margin-bottom: 50px;
     }
-
+}
 }
